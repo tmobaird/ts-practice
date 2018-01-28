@@ -1,4 +1,4 @@
-import { showBoolean, showNumber, showString } from '../../src/katas/basic-variables'
+import { showBoolean, showNumber, showString } from '../../../src/katas/basics/basic-variables'
 
 describe('variables', () => {
   describe('numbers', () => {

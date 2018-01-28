@@ -1,4 +1,4 @@
-import { Greeting, Reply } from '../../src/katas/enums'
+import { Counter, Greeting, MLBNamesByCity, Reply } from '../../../src/katas/basics/enums'
 
 describe('enums', () => {
   describe('Reply', () => {
@@ -19,6 +19,24 @@ describe('enums', () => {
     })
     it('returns Old friend, hello', () => {
       expect(Greeting.Yoda).toEqual('Old friend, hello')
+    })
+  })
+
+  describe('MLBNamesByCity', () => {
+    it('returns Cubs', () => {
+      expect(MLBNamesByCity.Chicago).toEqual('Cubs')
+    })
+    it('returns Nationals', () => {
+      expect(MLBNamesByCity.Washington).toEqual('Nationals')
+    })
+  })
+
+  describe('Counter', () => {
+    it('returns 5', () => {
+      expect(Counter.First).toEqual(5)
+    })
+    it('returns 6', () => {
+      expect(Counter.Second).toEqual(6)
     })
   })
 })
