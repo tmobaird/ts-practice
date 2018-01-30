@@ -33,3 +33,9 @@ export enum Counter {
   First = 5,
   Second
 }
+
+export enum Color {
+  Green = '#0DFF00',
+  Red = '#FF0000',
+  Blue = '#0015FF'
+}

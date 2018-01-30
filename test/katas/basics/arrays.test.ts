@@ -2,6 +2,8 @@ import {
   anyArray,
   arrayOfNumbers,
   arrayOfUsers,
+  arrayOfUsersOrHashUsers,
+  HashUser,
   mixedArray,
   numberArray,
   numberArrayTwo,
@@ -44,6 +46,12 @@ describe('Arrays', () => {
   it('includes only elements of type user', () => {
     arrayOfUsers.forEach(element => {
       expect(element instanceof User).toBeTruthy()
+    })
+  })
+  it('includes only elements of type user or HashUser', () => {
+    arrayOfUsersOrHashUsers.forEach((element: User | HashUser) => {
+      result = element.name || element instanceof User
+      expect(result).toBeTruthy()
     })
   })
 })

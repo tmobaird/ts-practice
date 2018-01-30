@@ -21,3 +21,14 @@ export const anyArray: any[] = [true, 'two', 3, new User('Thomas')]
 export const arrayOfNumbers: Array<number> = [10, 20, 30]
 
 export const arrayOfUsers: User[] = [new User('Walt'), new User('Hank'), new User('Saul')]
+
+export interface HashUser {
+  name: string
+}
+
+export const arrayOfUsersOrHashUsers: Array<User | HashUser> = [
+  new User('Thomas'),
+  { name: 'Baird' },
+  { name: 'Peter' },
+  new User('Parker')
+]

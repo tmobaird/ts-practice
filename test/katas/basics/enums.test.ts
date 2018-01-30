@@ -1,4 +1,4 @@
-import { Counter, Greeting, MLBNamesByCity, Reply } from '../../../src/katas/basics/enums'
+import { Color, Counter, Greeting, MLBNamesByCity, Reply } from '../../../src/katas/basics/enums'
 
 describe('enums', () => {
   describe('Reply', () => {
@@ -37,6 +37,18 @@ describe('enums', () => {
     })
     it('returns 6', () => {
       expect(Counter.Second).toEqual(6)
+    })
+  })
+
+  describe('Color', () => {
+    it('returns #0DFF00', () => {
+      expect(Color.Green).toEqual('#0DFF00')
+    })
+    it('returns #FF0000', () => {
+      expect(Color.Red).toEqual('#FF0000')
+    })
+    it('returns #0015FF', () => {
+      expect(Color.Blue).toEqual('#0015FF')
     })
   })
 })
